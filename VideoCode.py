@@ -24,8 +24,8 @@ class SinglyLinkedList:
             print(current_node.data, end=" -> ")
             current_node = current_node.next
         print("None")
-    
-    # def reverse(self):
+
+ # def reverse(self):
     #     reversed_part = None
     #     current = self.head
     #     while current:
@@ -37,38 +37,38 @@ class SinglyLinkedList:
     #     return reversed_part
 
 #Task 1: Add node to the beginning
-def add_to_beginning(self, data): 
-   new_node = Node(data)
-   new_node.next = self.head
-   self.head = new_node
+    def add_to_beginning(self, data): 
+      new_node = Node(data)
+      new_node.next = self.head
+      self.head = new_node
 
 #Task 2: Remove node with given data
-def remove_by_data(self, data):
-   current_node = self.head
-   prev_node = None
+    def remove_by_data(self, data):
+     current_node = self.head
+     prev_node = None
 
-   while current_node:
-      if current_node.data == data:
-        if prev_node:
-           prev_node.next = current_node.next
-        else:
-           self.head = current_node.next
-        return True
-      prev_node = current_node
-      current_node = current_node.next
-   print(f"Data {data} not found.")
-   return False
+     while current_node:
+        if current_node.data == data:
+          if prev_node:
+            prev_node.next = current_node.next
+          else:
+            self.head = current_node.next
+          return True
+        prev_node = current_node
+        current_node = current_node.next
+     print(f"Data {data} not found.")
+     return False
 
 # Task 3: Reverse the list in place
-def reverse_list(self):
-   prev_node = None
-   current_node = self.head
-   while current_node:
-      next_node = current_node.next
-      current_node.next = prev_node
-      prev_node = current_node
-      current_node = next_node
-   self.head = prev_node
+    def reverse_list(self):
+       prev_node = None
+       current_node = self.head
+       while current_node:
+          next_node = current_node.next
+          current_node.next = prev_node
+          prev_node = current_node
+          current_node = next_node
+       self.head = prev_node
 
 
 # Example usage:
