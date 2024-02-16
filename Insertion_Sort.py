@@ -11,3 +11,6 @@ def insertion_sort(arr):
 example_list = [12, 11, 13, 5, 6]
 insertion_sort(example_list)
 print("Sorted array is:", example_list)
+
+
+
