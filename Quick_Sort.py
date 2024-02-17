@@ -11,3 +11,4 @@ def quick_sort(arr):
 arr = [29, 10, 14, 37, 13,]
 sorted_arr = quick_sort(arr)
 print("Sorted array:", sorted_arr)
+
